@@ -12,6 +12,7 @@ void menu() {
     printf("4. Deterime the maximum value\n");
     printf("5. Determine the average value\n");
     printf("6. Saving data to the file\n");
+    printf("7. Restoring data from the file\n");
     printf("0. EXIT\n");
     printf("Select an option:\n");
 }
