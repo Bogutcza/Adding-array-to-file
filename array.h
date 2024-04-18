@@ -19,5 +19,7 @@ float CalculateAverage(int array[]) ;
 
 int saveArrayToFile(int array[]);
 
+int restoreArrayFromFile(int array[]);
+
 
 #endif //UNTITLED4_ARRAY_H

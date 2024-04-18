@@ -20,7 +20,22 @@ int saveArrayToFile(int array[]){
     fclose(fptr);
     return 0;
 }
+int restoreArrayFromFile(int array[]) {
+    FILE *fptr = NULL;
+    fptr = fopen("plik.txt", "r");
+    if (fptr == NULL) {
+        return 1;
+    }
+    for (int i = 0; i < SIZE; i++) {
 
+        if (fscanf(fptr, "array[%d] = %d\n", &i, &array[i]) != 2) {
+            fclose(fptr);
+            return 2;
+        }
+    }
+    fclose(fptr);
+    return 0;
+}
 
 void enterDataIntoArray(int array[]) {
     printf("Enter data into array\n");
