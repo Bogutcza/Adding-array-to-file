@@ -12,6 +12,8 @@ void menu() {
     printf("4. Deterime the maximum value\n");
     printf("5. Determine the average value\n");
 
+    printf("7. Restoring data from the file\n");
+
     printf("0. EXIT\n");
     printf("Select an option:\n");
 }
@@ -52,6 +54,24 @@ int main() {
                 printf("Determine the average value\n\n");
                 printf("Average value=%f\n\n", CalculateAverage(array));
                 break;
+
+
+
+
+
+
+
+            case 7:
+                printf("Restoring data from the file\n\n");
+                if (!restoreArrayFromFile(array)) {
+                    printf("Array restored from the file\n\n");
+                    printf("Array content after restoration:\n");
+                    displayArray(array);
+                } else {
+                    printf("Something gone wrong\n\n");
+                }
+                break;
+
 
 
 
