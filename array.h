@@ -9,15 +9,20 @@ void displayArray(int array[]);
 
 void displayArray(int *array);
 
+
 void enterDataIntoArray(int array[]) ;
+
 
 int FindMaximumValue(int array[]) ;
 
+
+
 int FindMinimumValue(int array[]) ;
+
+
 
 float CalculateAverage(int array[]) ;
 
-int saveArrayToFile(int array[]);
 
 
 #endif //UNTITLED4_ARRAY_H

@@ -11,7 +11,7 @@ void menu() {
     printf("3. Determine the minimum value\n");
     printf("4. Deterime the maximum value\n");
     printf("5. Determine the average value\n");
-    printf("6. Saving data to the file\n");
+
     printf("0. EXIT\n");
     printf("Select an option:\n");
 }
@@ -52,14 +52,7 @@ int main() {
                 printf("Determine the average value\n\n");
                 printf("Average value=%f\n\n", CalculateAverage(array));
                 break;
-            case 6:
-                printf("Saving data to the file\n\n");
-                if(!saveArrayToFile(array)){
-                    printf("Array saved to the file\n\n");
-                }else{
-                    printf("Something gone wrong\n\n");
-                }
-                break;
+
 
 
             default:
