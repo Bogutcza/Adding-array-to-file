@@ -61,9 +61,22 @@ int main() {
                 }
                 break;
 
+            case 7:
+                printf("Restoring data from the file\n\n");
+                if (!restoreArrayFromFile(array)) {
+                    printf("Array restored from the file\n\n");
+                    printf("Array content after restoration:\n");
+                    displayArray(array);
+                } else {
+                    printf("Something gone wrong\n\n");
+                }
+                break;
+
 
             default:
                 printf("choose the right option\n\n");
+
+
 
 
         }
